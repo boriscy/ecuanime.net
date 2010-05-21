@@ -2,19 +2,15 @@ require 'rubygems'
 require 'sinatra'
 require 'mail'
 require 'haml'
-require 'active_record'
 
 
-ActiveRecord::Base.establish_connection(
-  :adapter => 'mysql',
-  :host     => 'localhost',
-  :username => 'root',
-  :password => 'demo123',
-  :database => 'polla_development'
-)
-
-class Jugadore < ActiveRecord::Base
-end
+#ActiveRecord::Base.establish_connection(
+#  :adapter => 'mysql',
+#  :host     => 'localhost',
+#  :username => 'root',
+#  :password => 'demo123',
+#  :database => 'polla_development'
+#)
 
 before do
   @nav = %w(inicio nosotros trabajos contacto)
@@ -27,7 +23,6 @@ get '/*' do
   @path = 'inicio' if @path == ''
   template = :index
 
-  @jugadores = Jugadore.all
   case(@path)
     when ''
       template = :index
