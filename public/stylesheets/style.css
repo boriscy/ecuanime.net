@@ -1,0 +1,128 @@
+body{
+background:#5C6634 url(../images/fondo.jpg) repeat-x;
+padding:0px; margin: 0px;
+text-align:center;
+font-family:Arial, Helvetica, sans-serif;
+}
+a{
+  color: #5C6634;
+  text-decoration:underline;
+}
+
+a:hover{
+  text-decoration:none;
+}
+
+#wrap{
+margin: 0px auto;
+width: 812px;
+background: transparent url(../images/fondo_cont.png) repeat-y;
+text-align: left;
+}
+#cont{
+margin:0px 31px; background: #FFF;
+}
+#nav{
+height: 42px; position: relative;
+background:transparent url(../images/fondo_nav.png) repeat-x;
+}
+#nav ul{
+margin:0px; padding:0px; list-style: none;
+width:310px; height:42px;
+background: transparent url(../images/nav.png) no-repeat;
+}
+#nav ul li{
+display: inline; padding:0px; width: 100px; height:42px; float:left;
+background: transparent url(../images/nav_sep.gif) no-repeat top right;
+}
+#nav ul li a{
+text-indent: -2000px; display: block; height: 42px;
+}
+#nav ul li.inicio{width: 65px;}
+#nav ul li.inicio:hover{
+background: transparent url(../images/fondo_nav2.png) repeat-x;
+}
+#nav ul li.inicio a:hover{
+background: transparent url(../images/nav.png) 0px 0px;
+}
+#nav ul li.inicio a.selected{
+background: transparent url(../images/nav.png) 0px 42px !important;
+}
+
+#nav ul li.nosotros{width: 82px;}
+#nav ul li.nosotros:hover{
+background: transparent url(../images/fondo_nav2.png) repeat-x;
+}
+#nav ul li.nosotros a:hover{
+background: transparent url(../images/nav.png) -65px 0px;
+}
+#nav ul li.nosotros a.selected{
+background: transparent url(../images/nav.png) -65px 42px !important;
+}
+
+#nav ul li.trabajos{width: 78px;}
+#nav ul li.trabajos:hover{
+background: transparent url(../images/fondo_nav2.png) repeat-x;
+}
+#nav ul li.trabajos a:hover{
+background: transparent url(../images/nav.png) -147px 0px;
+}
+#nav ul li.trabajos a.selected{
+background: transparent url(../images/nav.png) -147px 42px !important;
+}
+
+#nav ul li.contacto{width: 82px;}
+#nav ul li.contacto:hover{
+background: transparent url(../images/fondo_nav2.png) repeat-x;
+}
+#nav ul li.contacto a:hover{
+background: transparent url(../images/nav.png) -225px 0px;
+}
+#nav ul li.contacto a.selected{
+background: transparent url(../images/nav.png) -225px 42px !important;
+}
+
+#nav img{
+position:absolute;
+top:0px; right:0px;
+}
+
+#imagen{
+height: 116px;
+background: transparent url(../images/imagen.jpg) no-repeat;
+}
+
+#contenido div.pad{
+padding: 20px 37px;
+height: 100% !important;
+position: relative;
+height: 100%;
+}
+
+div.input{
+  margin: 12px;
+}
+label{
+  color:#4A4A4A;
+  font-weight:bold;
+}
+
+.grey{
+  color:#4A4A4A;
+}
+
+h3, h4{
+  margin: 15px 4px 5px;
+}
+
+
+#pie{
+background: transparent url(../images/fondo_pie.png) repeat-x;
+height: 132px;
+}
+#pie .pie{
+width: 812px; height: 132px; margin: 0px auto;
+background: transparent url(../images/pie.gif) repeat-x;
+}
+
+.advertencia{color: #BDBF00}

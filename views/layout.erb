@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link type="text/css" href="/stylesheets/style.css" media="all"  rel="stylesheet"/>
+<title>ecuánime</title>
+</head>
+<body>
+	<div id="wrap">
+	    <div id="cont">
+            <!--Navegacion-->
+            <div id="nav">
+				<ul>
+					<% @nav.each do |v|%>
+					<% href, titulo = v, v.capitalize %>
+					<% href = "/" if v == "inicio" %>
+					<% @path == v ? cls = 'class="selected"' : cls = "" %>
+                    <li class="<%= v %>"><a href="<%= href %>" <%= cls %> ><%= titulo %></a></li>
+					<% end %>
+                </ul>
+                
+                <img src="/images/ecuanime_letras.png" alt="ecuánime"/>
+            </div>
+            <!--Fin Navegacion-->
+            
+            <!--Imagen-->
+            <div id="imagen"></div>
+            <!--Fin Imagen-->
+            
+            <div id="contenido">
+            	<div class="pad" style="height:100%">
+                    <%= yield %>
+                </div>
+	        </div>
+            
+        </div>
+    </div>
+    <div id="pie">
+        <div class="pie">
+        </div>
+    </div>
+</body>
+</html>
