@@ -1,0 +1,24 @@
+%html{:lang => 'es'}
+  %head
+    %meta{:content => 'text/html', :charset => 'utf-8'}
+    %link{ :type=> 'text/css', :href => '/stylesheets/style.css', :rel => 'stylesheet'}
+   
+  %body
+    %div#wrap
+      %div#cont
+        %div#nav
+          %ul
+            - @nav.each do |n|
+              %li{:class => n}
+                - cls = ""
+                - cls = "selected" if n == @path
+                - n = "" if n == "inicio"
+                %a{:href => "/#{n}", :class => cls}= n.capitalize
+
+        %div#imagen                
+
+        %div#contenido
+          %div{:class => 'pad'}
+            = yield
+
+

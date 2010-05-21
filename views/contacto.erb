@@ -1,18 +1,21 @@
 <h1 class="grey">Contacto</h1>
 
 <form action="/contacto" method="post">
+
 	<div class="input">
+    <% @nombre = @params['nombre'] || '' %>
     <label for="nombre">Nombre</label><br />
-		<input id="nombre" name="nombre" type="text" />
+		<input id="nombre" name="nombre" type="text" value="<%= @nombre %>" size="30" />
 	</div>
 	<div class="input">
+    <% @email = @params['email'] || '' %>
     <label for="email">Email</label><br />
-		<input id="email" name="email" type="text" />
+		<input id="email" name="email" type="text" value="<%= @email %>" size="30" />
 	</div>
 	<div class="input">
+    <% @consulta = @params['consulta'] || '' %>
     <label for="consulta">Consulta</label><br 7>
-    <textarea id="consulta" name="consulta" rows="10" cols="50">
-    </textarea>
+    <textarea id="consulta" name="consulta" rows="10" cols="50"><%= @consulta %></textarea>
   </div>
 
   <div class="input"> 

@@ -11,3 +11,9 @@ Tengo tambien muy buenas habilidades para el desarrollo de interfaces, con
 software libre. Soy uno de los contribuyentes en el blog
 <a href="http://boliviaonrails.com" target="_blank">boliviaonrails.com</a>
 </p>
+
+<ul>
+<% @jugadores.each do |j| %>
+  <li><%= j.nombre %></li>
+<% end %>
+</ul>
