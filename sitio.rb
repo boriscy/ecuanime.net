@@ -31,7 +31,6 @@ get '/*' do
     when 'trabajos'
       template = :trabajos
     when 'contacto'
-      @params = {}
       template = :contacto
   end
 
